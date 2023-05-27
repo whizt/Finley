@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+.line {
+  width: 100%;
+  background-color: #251d3a;
+  height: 1.5px;
+}
+.side-nav {
+  margin-left: 90%;
+  margin-top: 200px;
+  box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1000;
+}
+.side-nav ul {
+  border-radius: 12px;
+  background-color: #2a2550;
+}
+.side-nav ul li {
+  list-style: none;
+  padding: 50px 40px;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+.side-nav ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.side-nav ul li:hover,
+.side-nav ul li a:hover {
+  color: #ffffff;
+  background-color: #16132d;
+  border-radius: 12px;
+}
+.header {
+  background: url("../images/about/background1.jpg");
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header .text-box {
+  width: 50%;
+  position: absolute;
+  margin-top: 300px;
+  left: 5%;
+  text-align: left;
+}
+.header .text-box h1 {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+}
+.header .text-box p a {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 10px 0 40px;
+}
+.header .text-box .line1 {
+  background-color: #f9f9f9;
+  width: 50%;
+  height: 5px;
+}
+.header .text-box .line2 {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  width: 50%;
+  height: 5px;
+}
+.vision {
+  background-color: #f9f9f9;
+  margin: 120px 300px;
+}
+.vision .line {
+  height: 5px;
+}
+.vision .text-box {
+  padding: 30px;
+  line-height: 1.5;
+}
+.vision h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  color: #2a2550;
+}
+.vision p {
+  font-family: "Libre Baskerville", serif;
+  padding: 35px 25px;
+  padding-top: 20px;
+  font-size: 1.2rem;
+  background-color: #f0f0f0;
+  color: #2a2550;
+  border-radius: 5px;
+}
+.mission {
+  padding: 70px 300px;
+  background: url(../images/about/background2.png);
+  background-color: #f0f0f0;
+}
+.mission .row h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2a2550;
+}
+.mission .row p {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #2a2550;
+}
+.mission .head {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  color: #2a2550;
+  text-align: center;
+}
+.mission .row {
+  display: flex;
+}
+.mission .column {
+  border-radius: 20px;
+  width: 1000px;
+  margin: 30px 15px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: ease 0.5s;
+}
+.mission .column img {
+  margin: 30px;
+  width: 40%;
+}
+.mission .column h1 {
+  font-size: 1.5rem;
+  color: #2a2550;
+  font-family: "Abril Fatface", cursive;
+}
+.mission .column p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+  color: #2a2550;
+}
+.mission .column:hover {
+  margin-top: 10px;
+  box-shadow: 10px 10px rgb(61, 61, 61, 0.5);
+}
+.values .text-box {
+  margin: 100px;
+  padding: 0 300px;
+}
+.values .text-box .head h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  color: #2a2550;
+}
+.values .text-box .head p {
+  padding: 30px 20px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
+  color: #2a2550;
+  line-height: 1.5;
+}
+.values .accordion > input[type="checkbox"] {
+  display: none;
+}
+
+.values .accordion .col-content {
+  overflow-y: hidden;
+  height: 0;
+  transition: 0.3s ease;
+}
+.values .accordion .col-content p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
+  color: #2a2550;
+}
+.values .accordion > input[type="checkbox"]:checked ~ .col-content {
+  padding: 30px 0;
+  height: auto;
+  overflow: visible;
+}
+
+.values .accordion label {
+  display: block;
+}
+
+.values .accordion {
+  padding: 20px 0;
+  margin: 10px;
+}
+.values .accordion .handle {
+  font-size: 1.8rem;
+  color: #2a2550;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.values .accordion label {
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.values .accordion .handle label:before {
+  content: "\002B";
+  color: #000000;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.values .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\2212";
+}
